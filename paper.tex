@@ -1,19 +1,22 @@
 %===============================================================================
 \documentclass[man]{apa}%can be jou (for journal), man (manuscript) or doc (document)
 \usepackage{url}   %this allows us to cite URLs in the text
+\usepackage{color} 
 \usepackage{graphicx}  %allows for graphic to float when doing jou or doc style
 \usepackage{amssymb}  %use formatting tools  for math symbols
 %===============================================================================
 
-\usepackage{blindtext}
+% used to note where improvements can be added
+\newcommand{\todo}[1]
+    {{\color{red}{\Large\bf#1}}}
 
 %===============================================================================
 %Here is where we start the important APA stuff
-\title{Geo-location, Social Media and Privacy}
+\title{Social Media, Privacy, and Geo Location}
 \author{Dustin Chilson}
 \affiliation{Information Security Intelligence \\ Ferris State University}
 \shorttitle{Social Media \& Privacy}
-\rightheader{Social Media}
+\rightheader{Social Media \& Privacy}
 \leftheader{Dustin Chilson}
 \note{ISIN-499-Capstone \\ Spring 2011 \\ April 24, 2011}
 \abstract{
@@ -29,26 +32,12 @@
 
 %===============================================================================
 \begin{document} 
-\maketitle  
-Bla Bla about Intro to Social media 
-
--Growth as a medium 
-
--current usage numbers 
-
--privacy issues 
-
--data collected
-
--Explanation of paper
-
+%maketitle is in the intro file
+\include{intro}
 \include{social}
-
-\include{privacy}
-
 \include{tagged}
-
 \include{tools}
+\include{conclusion}
 %===============================================================================
 \bibliography{paper}
 %===============================================================================

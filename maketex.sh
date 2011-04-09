@@ -1,19 +1,23 @@
 #!/bin/sh
 echo Spell Checking!
-aspell check $2.tex
+aspell check intro.tex
+aspell check social.tex
+aspell check paper.tex
+aspell check tagged.tex
+aspell check tools.tex
 echo Creating Document!
-pdflatex -interaction=batchmode -no-shell-escape $2.tex > /dev/null
+pdflatex -interaction=batchmode -no-shell-escape paper.tex > /dev/null
 
 echo Adding Bibliography!
-bibtex -terse $2.aux > $2bib.log
-pdflatex -interaction=batchmode -no-shell-escape $2.tex > /dev/null
-pdflatex -interaction=batchmode -no-shell-escape $2.tex > /dev/null
+bibtex -terse paper.aux > paperbib.log
+pdflatex -interaction=batchmode -no-shell-escape paper.tex > /dev/null
+pdflatex -interaction=batchmode -no-shell-escape paper.tex > /dev/null
 
-rm *.aux $2.bbl $2.blg $2.log $2bib.log
-rm $2.bib.bak $2.ent $2.fff $2.ttt $2.tex.bak
+rm *.aux paper.bbl paper.blg paper.log paperbib.log
+rm paper.bib.bak paper.ent paper.fff paper.ttt paper.tex.bak
 
 /usr/bin/osascript \
-  -e "set theFile to POSIX file \"$2.pdf\" as alias" \
+  -e "set theFile to POSIX file \"paper.pdf\" as alias" \
   -e "set thePath to POSIX path of theFile" \
   -e "tell application \"Skim\"" \
   -e "  activate" \
