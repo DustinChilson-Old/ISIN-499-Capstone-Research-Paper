@@ -39,7 +39,15 @@ you can store your social activity in a database that you control, making it
 easy to search, sort, analyze, publish and display activity from your network.
 All you need is a web server that can run a PHP application."~\cite{thinkup}
 
-\todo{explain Difference between the tools}
+These tools both work on the same premise, collect information from the internet
+from and about a user's account and create a report for easy
+analysis by the user. The differences lay in the reasoning behind them. Radian6
+is targeted at brands which are looking to help their customers while
+maintaining a specific public facing image. ThinkUp on the other hand targets
+users who would like to have a one stop location of all their data in a database
+that is controlled by them where they can interact with their friends safely.
+These tools are targeted at different groups but can serve the same purpose of
+protecting the information that is available on the internet about a user.
 
 \subsection{Browser Features}
 As more and more advertisers realize the impact of having extensive profiles on
@@ -77,23 +85,65 @@ adhere to the users request. With no laws being in place to enforce these
 features ad networks may track users anyway.
 
 \subsection{Extensions} 
+In addition to built in browser features many of the current browsers allow for
+users to install extensions. These are small add-on pieces of code that extend
+the feature set of the browser. These extensions can be small site specific
+interactions to tools that secure the browser. The extensions that help secure
+the browser come in many forms and can be used to block tracking cookies, block
+sites with known malware, and even rate sites based on parental ratings. These 
+tools can be used to quickly secure a web browser. They may not protect a user
+from sharing too much data on the internet but will help stop from sharing data
+without their knowledge.
 
-\todo{AdBlock}
+The first type of browser extension is one of the most important. It is the type
+of extension that blocks tracking cookies from being used on your computer.
+These will also stop some third party services from working on sites. The main
+example for this type of extension is called Ghostery. "Ghostery sees the
+invisible web - tags, web bugs, pixels and beacons. Ghostery tracks the trackers
+and gives you a roll-call of the ad networks, behavioral data providers, web
+Ghostery allows you to block scripts from companies that you don't trust, delete
+local shared objects, and even block images and iframes. Ghostery puts your web 
+privacy back in your hands. publishers, and other companies interested in your 
+activity. ~\cite{ghost}"
 
-\todo{AdBlocking} 
+Another type of extension is one which can check the reputation of a
+website. These tools can be based on a crowd sourced rating or can be based on
+an automated security scan. Web of Trust is one such tool which shows a user a
+rating of a site. "WOT’s traffic-light style rating system can be understood by 
+the smallest of web surfers. Green means safe, yellow means caution and red 
+means stop.~\cite{wot}"
 
-\todo{Ghostery}
+\subsection{Anonimization and Secure Connections} 
+Another aspect of protection against is controlling what information is passed
+out using a network connection. As connections are made to the internet through
+a browser data is passed to allow for a smoother transfer. This data includes,
+browser version, Operating system, screen resolution, window size, extensions,
+and much more information. By combining this information together website
+operators are able to compile a "browser fingerprint" of a user. This allows
+the websites to track a user without setting a cookie.
 
-\todo{etc.}
+To protect against these tactics there are a few tools that can help mitigate the
+data that is sent. The first type is a proxy which in effect obscures the
+network location of the request. A request is sent to a website to get a
+website. That request is forwarded to the proper site and the data is routed to
+the user. If enough people are using the proxy it becomes harder to track the
+individual users because of the network location mask.
 
-\subsection{Anonimization} 
+In addition to proxies there are more advanced versions of the same tool. This
+is called Tor or The Onion Router, which works like a proxy but instead of the
+requests coming from one server the requests come from thousands of different
+exit points further obscuring the users data and making it much harder to
+fingerprint a user's browser and connection."
 
-\todo{proxies}
+The most efficient and safest way to connect to the internet is through and
+secure connection. This can be achieved by "Tunneling" all network traffic
+through an SSH session or a VPN to a server which then makes requests from a secure
+network server. When used in combination with Tor or proxies it becomes
+extremely hard to track users that use the proper software to mask their network
+activity.
 
-\todo{VPN}
-
-\todo{Tor}
-
-\subsection{Script Kiddie Toys}
-
-\todo{Cree.py}
+These tools are not the end all and be all of network and social media security.
+These tools help in securing data leakage but are not a replacement for smart
+usage of social media sites. Selective and careful sharing of information is one
+to the only ways to be totally secure in the data that is shared on the
+internet.
