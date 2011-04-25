@@ -1,6 +1,7 @@
 \section{Social Media and Personal Data}
+%{{{
 As discussed earlier, social networking sites are web services that allow users
-to have an online presence within the scope of the site's network. The question
+to have an on-line presence within the confines of the site's network. The question
 is what data is collected by these sites and how that data can be used by third
 parties as well as the controls that users have over their personal data.
 
@@ -8,150 +9,354 @@ Personal Data is a different subset of data than what people usually associate
 with themselves. The typical name, address, phone, etc are just a few points of data
 that can be used by different individuals or companies to glean information
 about a person. Many social networks collect and use far more data than this as
-part of the profiles on their sites. How this data is collected and used is
-entirely based on the site but in general social networking sites offer a free
+part of the profiles on their sites. These sites collect data about product
+preferences as well as types of content read. How this data is collected and used is
+entirely based on the site but in general, social networking sites offer a free
 service to users in exchange for showing ads based on a profile that is built
 using data that is submitted to the site.
 
 As part of the web2.0 movement many websites added social features to their
-sites. Game websites added commenting a crowd-sourced reviews about games. Online
+sites allowing users to interact with each other as well as the website. Game 
+websites added commenting and crowd-sourced reviews about games. On-line
 retailers added reviews and allowed users to see what their friends thought of
 products. These tools were added to grow interest and increase interaction
 between customers and the services offered. More page views usually means more
 ad clicks or product sales. As an extension of this many social networking sites
 added Application Programming Interfaces (APIs) to their web services allowing
-third party programmers to create new and innovative interfaces to their system.
-This increased interaction with the service and grew the service's user base.
+third party programmers to create new and innovative interfaces for their system.
+This increased interaction with the service and has grown the service's user base.
 
-APIs are documented hook in points for programmers to interact with another
-system. To look at it from another view would to see APIs as a computer program
+APIs are documented "hook in" points for programmers to interact with another
+system. To look at it from another view is to see APIs as a computer program
 with a window that allows you to control the output of a text box. Using
 different switches, buttons, sliders, etc. the user is able to create exactly
-the output that they want. For programmers is is useful because they can query
+the output that they want. For programmers it is useful because they can query
 the service for data and receive a string containing the data that they want.
 
 Any reputable website or web application will have a privacy policy and a terms
-of use which will explain to the site's users how data collected will be used
+of use statement which will explain to the site's users what data is collected
+and how data collected will be used,
 and who the data will be shared with. These documents lay out exactly the rules
-with which the site may be used by consumers and explains to the user the type
-of functions their data may play. These policies play a huge role in the use of
+with which the site may be used by consumers and how the user's data may be
+utilized by the service. These policies play a huge role in the use of
 APIs as well. Users may use the APIs to interact with the services but they
-limit some of the uses. One limitation may include a no spam policy allowing web
-services to terminate API access to tools which abuse the service.
+limit some of the uses. One limitation may include a "no spam" policy allowing web
+services to terminate API access to tools which abuse the API.
 
 Privacy policies, terms of use, APIs, and data collection all play a huge role
 in the growth and adoption of social networking platforms. We will look into
-several sites data collection, API access, and privacy polices to glean some
-idea of how some of these sites use user data. These sites are divided into two
+several sites data collection practices, API access, and privacy polices to glean some
+idea of how some of these sites utilize user data. These sites are divided into two
 major sections social networks with geo-location features including Facebook and
-Twitter and location dependent social networks such as FourSquare, Gowalla,
-Loopt, and Yobonga.
+Twitter and location dependent social networks such as FourSquare, and Gowalla.%}}}
 
 %==================================================================================
 \subsection{Social Networks with Geo-location Features}
-Explain how these networks work and how location data is an optional portion of
-the site.
+%{{{
+Some of the first social networks were very basic. They allowed users to create
+profiles and interact with one another forming the basic foundation of what
+social media is, creating a path of innovation. As these sites grew they added
+popular features that were introduced elsewhere, keeping themselves competitive.
+
+Sites that were built early in the social media movement didn't have the benefit
+of the research and market data of later social media applications. As other sites grew
+they introduced new concepts and experimented with new aspects of how social
+media applications function, allowing users to interact in new ways. One such new concept 
+that was introduced was the idea of location centric social interactions. One
+mechanism which allowed this to flourish was the "Check-in". The "Check-in"
+allowed users to post their location as well as a brief message to their
+followers.
+
+The first category of social media application are those that have Geo-Location
+features but are not dependent on them. These features were added after the
+social networking site had already been established and are not central to their
+operation.%}}}
 
 %==================================================================================
-\subsubsection{Facebook}
-Explain premise for site
-
-Data Collected:
-what data is collected on profiles, asked for during registration, etc.
-
-Available Via API:
-List data that is available via API as well as format that the data is returned
-in
-
-Privacy Policy and Terms of Use
-Explain How the data is allowed or excluded from being used
-
-Privacy Controls:
-%==================================================================================
-\subsubsection{Twitter}
-Explain premise for site
-
-Data Collected:
-what data is collected on profiles, asked for during registration, etc.
-
-Available Via API:
-List data that is available via API as well as format that the data is returned
-in
-
-Privacy Policy and Terms of Use
-Explain How the data is allowed or excluded from being used
-
-Privacy Controls:
+%  ______              _                 _    
+% |  ____|            | |               | |   
+% | |__ __ _  ___  ___| |__   ___   ___ | | __
+% |  __/ _` |/ __|/ _ \ '_ \ / _ \ / _ \| |/ /
+% | | | (_| | (__|  __/ |_) | (_) | (_) |   < 
+% |_|  \__,_|\___|\___|_.__/ \___/ \___/|_|\_\
 %==================================================================================
 
-\subsection{Location Dependent Networks}
-Explain how these sites are dependent on location data and their market,
-monitization, etc.
+\subsubsection{Facebook} 
+%{{{
+The first example of a site which added geo-location
+features after being established is Facebook. Facebook describes itself as
+"giving people the power to share and make the world more open and
+connected"~\cite{fbabout}. This is a simplistic definition of the largest social
+network in the world with over 500 million users and a greater than 15 billion dollar
+valuation~\cite{fbcb}. 
+
+Facebook, having the largest user base of all social media applications, has the
+unique opportunity to see how a huge subset of the human population interacts. In
+addition to being an observer, Facebook can introduce changes into these
+interactions. At the core of Facebook is a huge data-store of curated information
+about users and by extension humanity as a whole. 
+
+Facebook collects quite a bit of information. "When you sign up for Facebook
+you provide [Facebook] with your name, email, gender, and birth date. During the
+registration process [Facebook will] give you the opportunity to connect with
+your friends, schools, and employers. You will also be able to add a picture of
+yourself. In some cases [Facebook] may ask for additional information for
+security reasons or to provide specific services to you. Once you register you
+can provide other information about yourself by connecting with, for example,
+your current city, hometown, family, relationships, networks, activities,
+interests, and places. You can also provide personal information about yourself,
+such as your political and religious views"~\cite{fbpp}.
+
+The statement of data collected may seem benign enough but it downplays the vast
+array of information that is contained within these categories. One example is
+the information about relationships and interests. By one user connecting
+themselves to another they are implying some shared information. When combining
+the interests of both users information can be inferred about both. The more
+connections a user has the more concrete the inferred information becomes.
+
+Facebook includes a geo-location feature. This feature is called Facebook Places.
+Facebook Places works the same way that a status update works on a user's
+profile but also will include a location. This "check-in" feature was developed
+to capitalize on the increased usage of smart phones and other mobile devices.
+
+Internally Facebook can access the data on a users profile directly from the
+database. The larger the web service the more likely there will be controls in
+place to protect the data from external as well as internal threats. To allow
+users to access their data using alternative interfaces Facebook provides an API
+system to users and developers. Facebook calls their API the Graph API. It
+allows the developer to see a user's social graph. The API allows the developer
+to access all of the data that is on a profile programmatically. Within the data
+their is a user object which associates all of the data to a unique user ID. In
+addition to a the basic name, email, gender, and username, developers can access
+a user's timezone, bio, birthday, education, hometown, political views, and even
+relationship status~\cite{fbapi}. All of these pieces of data are available to
+the API developer if a
+user gives the appropriate permissions. In addition to having access to a user's
+information, the API also gives access to data about that user's friends.
+
+All of this data is returned in a format which is easily readable. Facebook
+returns all of the requested information in a format called JSON. "JSON
+(JavaScript Object Notation) is a lightweight data-interchange format. It is
+easy for humans to read and write. It is easy for machines to parse and
+generate. It is based on a subset of the JavaScript Programming Language,
+Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is
+completely language independent but uses conventions that are familiar to
+programmers of the C-family of languages, including C, C++, C\#, Java,
+JavaScript, Perl, Python, and many others. These properties make JSON an ideal
+data-interchange language"~\cite{JSON}.
+
+To allow users to protect themselves, Facebook offers a plethora of privacy
+controls. These controls are set by the user to change the data that is
+available to other people including friends. As another layer of protection
+users must explicitly allow information to be given to an application. This
+allows the user to protect their information from being gathered easily without
+their permission.
+
+Facebook's privacy policy explains that they are certified by TRUSTe, a company
+which inspects web sites for security issues, and have met
+the requirements for the European Union's Safe Harbor framework. The policy also
+explains what data is collected in addition to the information posted to a
+profile. This data includes access logs, browser information, as well as network
+information such as IP address. The policy finally explains how the Facebook
+company will use the data that is collected. They explain that they will use it
+to focus ads, make suggestions, and help friends connect with a user.
+%}}}
+
 %==================================================================================
-\subsubsection{FourSquare}
-Explain premise for site
+%  _______        _ _   _             
+% |__   __|      (_) | | |            
+%    | |__      ___| |_| |_  ___ _ __ 
+%    | |\ \ /\ / / | __| __|/ _ \ '__|
+%    | | \ V  V /| | |_| |_|  __/ |   
+%    |_|  \_/\_/ |_|\__|\__|\___|_|   
+%==================================================================================
 
-Data Collected:
-what data is collected on profiles, asked for during registration, etc.
+\subsubsection{Twitter} 
+%{{{
+Twitter describes itself as "a real-time information network that connects
+you to the latest information about what you find interesting. Simply find
+the public streams you find most compelling and follow the conversations. At the
+heart of Twitter are small bursts of information called Tweets. Each Tweet is
+140 characters in length, but don’t let the small size fool you, you can share a
+lot with a little space. Connected to each Tweet is a rich details pane that
+provides additional information, deeper context and embedded media. You can tell
+your story within your Tweet, or you can think of a Tweet as the headline, and
+use the details pane to tell the rest with photos, videos and other media
+content"~\cite{twabout}.
 
-Available Via API:
-List data that is available via API as well as format that the data is returned
-in
+Twitter's premise is much different than Facebook's. Where Facebook looks to be
+the center of a user's social network, Twitter aims to be a channel for users to
+interact with the world. Users follow other users allowing for simple text
+message based communication. In most situations Twitter is a one way form of
+communication. Popular users, such as celebrities, news networks, and companies,
+broadcast information to the population and the users consume this content. An
+interesting aspect is that Twitter users can in turn respond to these broadcasts
+but are not required to.
 
-Privacy Policy and Terms of Use
-Explain How the data is allowed or excluded from being used
+Twitter collects very little information upon registration. "When you create or
+reconfigure a Twitter account, you provide some personal information, such as
+your name, username, password, and email address. Some of this information, for
+example, your name and username, is listed publicly on [Twitter's] Services, including
+on your profile page and in search results" ~\cite{twpp}.
 
-Privacy Controls:
+The bulk of the data that is collected about a user is based on the content that
+they share. Simple posts about pizza or bands create an association between a
+user's account and some of their interests. The social map of people who a user
+follows also tells quite a bit about that user. When all combined into a
+comprehensive profile Twitter has a snapshot of a user's interests and can use
+it to advertise directly to that user.
+
+By combining this interest profile with location data that can be attached to
+Tweets users allow Twitter to focus ads down to a local area. This can provide
+the opportunity for
+extremely targeted advertising. An example would be a user is interested in pizza, so
+Twitter sells advertising space to the local pizza restaurant down the road from the user's
+last Tweet with location data. The more a user participates on Twitter the more
+accurate the profile becomes and the more targeted the ads become.
+
+Like Facebook, Twitter has an API which returns it's data using the JSON format.
+Twitter's API allows for users to access all of the data that is available on a
+user's profile. This includes Tweets, re-Tweets, followers, people whom the user
+is following, and favorite Tweets.
+
+Twitter's privacy policy explains how Twitter will use the data that is
+collected as well as who they will share the data with. Twitter requires that
+before they provide any information to a third party the user must consent by
+using a form to authorize the transfer of information. Twitter also states that
+they may share data with law enforcement if requested. Twitter may also sell
+large aggregated data sets which have had personal data removed~\cite{twpp}.
+
+Twitter doesn't seem to gather all that much data about a user from the
+perspective of a new registrant but if one digs deeper there is a significant
+amount of information to be inferred about individual users that could potentially
+be shared.
+%}}}
 
 %==================================================================================
-\subsubsection{Gowalla}
-Explain premise for site
 
-Data Collected:
-what data is collected on profiles, asked for during registration, etc.
+\subsection{Location Dependent Networks} 
+%{{{
+Location dependent social networks are those applications which cannot exist
+without users that are willing to share their location data. Facebook and
+Twitter have functions that are useful to people who are not comfortable
+sharing location data. FourSquare and Gowalla base their entire platform
+on mobile users sharing their location data.
 
-Available Via API:
-List data that is available via API as well as format that the data is returned
-in
-
-Privacy Policy and Terms of Use
-Explain How the data is allowed or excluded from being used
-
-Privacy Controls:
+Facebook and Twitter are able to monetize their user's interaction and data
+without including location data. Location dependent sites on the other hand must
+have the location data to create value for the users as well as investors.%}}}
 
 %==================================================================================
-\subsubsection{Loopt}
-Explain premise for site
+%  ______                _____                            
+% |  ____|              / ____|                           
+% | |__ ___  _   _ _ __| (___   __ _ _   _  __ _ _ __ ___ 
+% |  __/ _ \| | | | '__|\___ \ / _` | | | |/ _` | '__/ _ \
+% | | | (_) | |_| | |   ____) | (_| | |_| | (_| | | |  __/
+% |_|  \___/ \__,_|_|  |_____/ \__, |\__,_|\__,_|_|  \___|
+%                                 | |                     
+%                                 |_|                     
+%==================================================================================
 
-Data Collected:
-what data is collected on profiles, asked for during registration, etc.
+\subsubsection{FourSquare} 
+%{{{
+FourSquare claims more than eight million users with an additional 35,000 users
+being added each day.  Users “check-in” using a smart phone app or text
+messaging, proactively reporting their current location.  Users earn points and
+badges for check-ins. Frequent check-ins from the same location earn the user
+coupons and discounts from the merchants.  
 
-Available Via API:
-List data that is available via API as well as format that the data is returned
-in
+Information that is collected upon registration includes first and last name,
+gender, date of birth, email address, telephone number, and current location.
+Once an individual is a user of the service, the following information is
+collected and stored on servers each time they visit the site: browser or mobile
+platform, including user location, IP address, cookie information, and the page
+requested~\cite{fspp}. Because this application is dependent on location data
+almost all interactions with the site record the user's current location using
+their mobile device's GPS or cell phone signal.
 
-Privacy Policy and Terms of Use
-Explain How the data is allowed or excluded from being used
+As has become a staple of the current batch of social media sites, FourSquare
+provides users and developers with an API. This API is a RESTful API. It allows
+users to submit requests to a URL and the requested data will be returned. The
+data that is returned in the JSON format.
 
-Privacy Controls:
+The user has some control over what personal information is shared with others
+through the customization of privacy settings. These privacy settings can be
+confusing for a new user. To make the task of locking a profile down FourSquare
+provides a breakdown of the default settings for different pieces of
+information~\cite{fschart}. This chart is available on their website.
+
+FourSquare states that "Personal Information about our users is an integral part
+of our business. We neither rent nor sell your Personal Information to anyone"
+~\cite{fspp}. Based on this simple statement a user can be reasonably sure that
+their data is safe to be submitted to FourSquare. Because of the nature of the
+FourSquare service much of the data is already public so users should be aware
+of privacy issues related to posting information to the public Internet.%}}}
 
 %==================================================================================
-\subsubsection{Yobongo}
-Explain premise for site
+%   _____                    _ _       
+%  / ____|                  | | |      
+% | |  __  _____      ____ _| | | __ _ 
+% | | |_ |/ _ \ \ /\ / / _` | | |/ _` |
+% | |__| | (_) \ V  V / (_| | | | (_| |
+%  \_____|\___/ \_/\_/ \__,_|_|_|\__,_|
+%==================================================================================
 
-Data Collected:
-what data is collected on profiles, asked for during registration, etc.
+\subsubsection{Gowalla} 
+%{{{
+Gowalla describes it's function as "help[ing] you keep up with friends, share
+your favorite places and discover the extraordinary around you"~\cite{goblog}.
+Gowalla is a direct competitor to FourSquare, both of the sites operate on the
+same use case, allow users to "check-in" to locations giving their friends and
+followers access to the locations that they enjoy.
 
-Available Via API:
-List data that is available via API as well as format that the data is returned
-in
+Gowalla collects a set of data that is very close to all of the other sites in
+this paper. They state that the site collects a user's name, email, phone number, and
+carrier. All of this is standard data to be collected by a mobile based social
+media application. Gowalla also collects location information based on the data
+passed from the user's mobile device.
 
-Privacy Policy and Terms of Use
-Explain How the data is allowed or excluded from being used
+Just like Facebook, Twitter, and FourSquare, Gowalla provides an API for
+developers and users to connect to the platform and interact with the data that
+is available. Gowalla also uses a RESTful API which works the same way as a web
+browser functions. Requests are sent to a URL and data is returned. Gowalla
+returns their data in JSON format.
 
-Privacy Controls:
+Gowalla may share personally identifiable information with third parties.
+"Gowalla may share your personally identifiable information with third parties
+solely for the purpose of providing services to you. If we do this, such third
+parties’ use of your information will be bound by this Privacy
+Policy"~\cite{gwpp}.
+
+Gowalla has privacy controls which allow a user to choose who can see what
+information from their profile. On Gowalla profiles are called passports and by
+default a user's passport is public. By changing a setting a user can change
+their passport to private, allowing only their friends to see information.%}}}
 
 %==================================================================================
-\subsection{Site Comparison}
-Bla Bla Bla
+\subsection{Site Comparison} 
+%{{{
+Overall these sites are some of the most secure social networking sites on the
+Internet today. Security from attack is not the same thing as protecting a
+user's privacy. These sites collect a huge amount of information about their
+users and make it available to developers.
+
+Facebook and Twitter seem to be the best of the sites for protecting the
+information of the users. Both of these sites require that the user give
+permission for their data to be shared via their respective APIs. By doing this
+control of the data is given back to the users. These sites also state that they will not
+sell the data of it's users. They also state that the data may be used for studies to
+improve the service offerings but no personally identifying information is
+available.
+
+FourSquare is also secure and states that it will not pass data to third
+parties. This protects the user's data  as well. Gowalla is one of the sites
+that will give information to third parties without consent of the user. This
+may be a trusted third party but the fact that the user will not be contacted
+gives the user less control over their data.
+
+All of these sites require users to give them information and explain in broad
+terms how some of the data will be used. This may be fine with some users but
+for others there may be a problem with how much data is available on-line. The
+question of privacy is one of choice, is the user willing to use a service which
+may compromise their privacy?%}}}
 

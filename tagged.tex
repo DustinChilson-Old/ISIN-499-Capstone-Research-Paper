@@ -1,36 +1,37 @@
 \section{Geo-Tagged Photos}
-In addition to storing data directly in a database stored by a social media
-company there is a threat to a user's privacy just through the act of sharing a
+%{{{
+In addition to storing data directly in a database administered by a social media
+company there is a threat to a user's privacy just through the act of sharing an
 image on any website, even those without any social features what so ever.
 
-"Location-based services are rapidly gaining traction in the online world. With
+"Location-based services are rapidly gaining traction in the on-line world. With
 big players such as Google and Yahoo! already heavily invested in the space, it
 is not surprising that GPS and WIFI triangulation are becoming standard
 functionality for mobile devices: starting with Apple’s iPhone, all the major
-smartphone makers are now offering models allowing instantaneously upload of
+smartphone makers are now offering models allowing instantaneous upload of
 geo-tagged photos, videos, and even text messages to sites such as Flickr,
 YouTube, and Twitter. Likewise, numerous start-ups are basing their business
 models on the expectation that users will install applications on their mobile
 devices continuously reporting their current location to company
-servers.~\cite{friedlcybercasing}"
+servers"~\cite{friedlcybercasing}.
 
-Data may be stored using the device's camera and GPS functionality. By
+Location data may be stored using the device's camera and GPS functionality. By
 combining data into the image including location data you are "Geo-tagging" the
 image. Geo-tagging is made possible by using a combination of technologies. The
 most prominent of which is GPS which works by triangulating a device's location
 using radio signals transmitted from geosynchronous orbiting satellites. 
 
-To store the data the camera applications use a type of file header used within
-images. This header is called an Exif header. "EXIF stands for "Exchangeable
+To store personal data, the camera applications use a type of file header used within
+images. This header is called an EXIF header. "EXIF stands for "Exchangeable
 Image File Format". This type of information is formatted according to the TIFF
 specification, and may be found in JPG, TIFF, PNG, PGF, MIFF, HDP, PSP and XCF
 images, as well as many TIFF-based RAW images, and even some AVI and MOV
-videos.~\cite{exif}" The data is not limited to location data. It also typically
+videos"~\cite{EXIF}. The data is not limited to location data. It also typically
 includes camera model, lens focal length, ISO setting, and even if a flash was
 used. 
 
-By including this data into an image and posting the image to the internet the
-users are opening themselves up to a threat from the internet. Knowledge of the
+By including this data into an image and posting the image to the Internet the
+users are opening themselves up to a threat from the Internet. Knowledge of the
 threats and the ease of collecting and using this image is one of the main issues
 that multimedia users face.
 
@@ -40,60 +41,64 @@ on Twitter of his automobile parked in front of his house, he let his fans know
 much more than that he drove a Toyota Land Cruiser. Embedded in the image was a
 geo-tag, a bit of data providing the longitude and latitude of where the photo
 was taken. Hence, he revealed exactly where he lived. And since the accompanying
-text was “Now it’s off to work,” potential thieves knew he would not be at home.
-~\cite{geotagnyt}"
+text was Now it’s off to work, potential thieves knew he would not be at home"
+~\cite{geotagnyt}.%}}}
 
 \subsection{Accessing Geo-Tagged Information} 
-There are several methods for gathering exif data from an image. The first
+%{{{
+There are several methods for gathering EXIF data from an image. The first
 method is slow and tedious. This method is at the core of reading files. To
-access the data the user must open the file using a program called a Hex editor.
-it opens binary files using the hexadecimal counting system showing the data in
+access the data the user must open the file using a program called a hex editor.
+It opens binary files using the hexadecimal counting system showing the data in
 a form which can be read more easily than in the binary form. While the file is
 opened in the hex editor the user can decode the data by converting the hex into
 the Unicode characters that are represented. Using a standardized file format
 the data can be matched to the way the data is stored. This method is very slow
 and takes quite a bit of technical understanding.
 
-The second method is much easier buy is also quite tedious. It requires the
-researcher to open each image using a program that exposes the exif data. These
+The second method is much easier but is also quite tedious. It requires the
+researcher to open each image using a program that exposes the EXIF data. These
 can be small programs specifically meant to show this data or it can be larger
 image editing suites such as Adobe's Photoshop. These programs can be used by
-anyone with computer knowledge and can be easily downloaded for free from the
-internet. Some of these programs do allow for batch reading of images but the
+anyone with computer knowledge and some can be easily downloaded for free from the
+Internet. Some of these programs do allow for batch reading of images but the
 method is not the most effective for searching for specific information.
 
 The main method for analyzing large numbers of images is by using one of the
-major photo sharing websites. The sites include Yahoo's Flickr and Google's
+major photo sharing websites. These sites include Yahoo's Flickr and Google's
 Picasa. Both of these sites allow users to search public images based on
 location data. Both of these sites also expose this functionality via API. By
-using the site's search features or developing tools that use the API
+using the site's search features or developing tools that use the API,
 researchers or attackers can learn quite a bit about a person.
+%}}}
 
-\subsection{Privacy Threats} The attacker can search using known location data
+\subsection{Privacy Threats} 
+%{{{
+The attacker can search using known location data
 or search through a known user's images for location data. By searching using
-known location data the attacker is able to learn the user name of a possible
-target. This may not seem like much but how often does a person use the same
-username or variation on other sites. By combining data collected from all over
-the internet a possible attacker is able to assemble a full bio of their target
+known location data, the attacker is able to learn the username of a possible
+target. This may not seem like much, but how often does a person use the same
+username or variation on other sites? By combining data collected from all over
+the Internet a possible attacker is able to assemble a full bio of their target
 without having ever met the person.
 
-The Anonymous hacker group uses this technique quite frequently and to great
+The Anonymous hacker group uses this technique quite frequently to great
 effect. They call it "doxing" or gaining docs on someone. They have even posted
-Doxing is basically finding out information about a person. "The vast majority
-of people on the internet are anonymous and with anonymity comes power because
-you cannot hurt the physical person behind the username. Doxing takes away this
-power, that is why people will go to extreme lengths to make sure they remain
-anonymous.  However, the internet stores information from decades ago. Almost
-everyone can be found on the internet if you know what to look for. A full
-tutorial on one method for gathering information on a person.~\cite{doxing}"
+a doxing tutorial. Doxing is basically finding out information about a person. 
+"The vast majority of people on the Internet are anonymous and with anonymity
+comes power because you cannot hurt the physical person behind the username.
+Doxing takes away this power, that is why people will go to extreme lengths to
+make sure they remain anonymous.  However, the Internet stores information from
+decades ago. Almost everyone can be found on the Internet if you know what to
+look for.~\cite{doxing}"
 
-Now this tutorial may not be an authoritative source on researching the internet
-for personal information but with this basic tutorial any internet user can gain
+The doxing tutorial may not be an authoritative source for researching on the Internet
+for personal information, but with this basic tutorial, any Internet user can gain
 some of the skills used by security researchers and can pose a threat to any
 one.
 
-In addition to online research and using the meta-data in the images there are
-tools that aggregates this location information into one interface. Cree.py is
+In addition to on-line research and using the meta-data in the images there are
+tools that can aggregate this location information into one interface. Cree.py is
 one such example. "Cree.py is an application that allows you to gather
 geo-location related information about users from social networking platforms
 and image hosting services. The information is presented in a map inside the
@@ -102,10 +107,10 @@ information (i.e. what was posted from that specific location) to provide
 context to the presentation.~\cite{creepy}"
 
 Tools and techniques such as Cree.py and doxing may be very real threats but the
-main tactic for keeping one's information save is understanding the impact of
-posting any type of information on the internet. Millions of users of the
-internet and social media applications are opening themselves up to being
+main tactic for keeping ones information safe is understanding the impact of
+posting any type of information on the Internet. Millions of users of the
+Internet and social media applications are opening themselves up to being
 exploited and having their identity stolen because they do not have the proper
-understanding of how the internet works. Knowledge is one of the best tools
-against being exploited and as knowledge grows tools and techniques to protect
-one's data will be easier to use and be far more effective.
+understanding of how the Internet works. Knowledge is one of the best tools
+against being exploited and as knowledge grows, tools and techniques to protect
+ones data will be easier to use and be far more effective.%}}}
